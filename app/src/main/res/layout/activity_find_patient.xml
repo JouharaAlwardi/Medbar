@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindPatientLabtests">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <Spinner
+        android:id="@+id/spinnerPatient_ID_"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/background"
+        app:layout_constraintBottom_toTopOf="@+id/scanPatient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/scanPatient"
+        android:layout_width="283dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="5dp"
+        android:drawableLeft="@drawable/ic_baseline_qr_code_scanner_22"
+        android:text="Scan"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/confirmPatient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/confirmPatient"
+        android:layout_width="283dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="216dp"
+        android:text="Confirm Patient"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="60dp"
+        android:text="Find Your Patient"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerPatient_ID_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+</androidx.constraintlayout.widget.ConstraintLayout>

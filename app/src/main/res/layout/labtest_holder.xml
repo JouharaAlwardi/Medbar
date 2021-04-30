@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:id="@+id/testName"
+                    android:layout_width="183dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/active"
+                    android:layout_width="183dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/ic_baseline_circle_24"
+                    android:drawablePadding="15dp"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="Active"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/testType"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:drawablePadding="0dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:text="patientName_ID" />
+
+            <TextView
+                android:id="@+id/testDate_"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:drawablePadding="0dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="patientName_ID" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="150dp">
+
+                <Button
+                    android:id="@+id/uploadResults_btn"
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:foregroundGravity="right"
+                    android:gravity="center"
+                    android:paddingLeft="0dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="0dp"
+                    android:text="Upload "
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/cancelLabtests_btn"
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Delete"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

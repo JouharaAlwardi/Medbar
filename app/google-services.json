@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "215742941205",
+    "project_id": "medbar-38d8a",
+    "storage_bucket": "medbar-38d8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215742941205:android:5ef1582bddbde7240de61c",
+        "android_client_info": {
+          "package_name": "com.example.medbar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215742941205-fg5m8nore7mq3tjnf6vs7tahvt5qdpv1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABqN2nKuvSgcmVxpfomcrYH12tXnPjpuU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215742941205-fg5m8nore7mq3tjnf6vs7tahvt5qdpv1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

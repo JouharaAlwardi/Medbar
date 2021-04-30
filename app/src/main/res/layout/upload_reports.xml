@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/patient_test_rp"
+        android:layout_width="287dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/background"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/annotationTxt_rp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15_rp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/background"
+        android:text="Medical Test:"
+        app:layout_constraintBottom_toTopOf="@+id/patient_test_rp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/patient_id_rp"
+        android:layout_width="287dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/background"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView15_rp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/annotationTxt_rp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Annotations :"
+        app:layout_constraintBottom_toTopOf="@+id/annotations_rp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/patientName_rp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Patient Name_ID:"
+        app:layout_constraintBottom_toTopOf="@+id/patient_id_rp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/choose_rs_rp"
+        android:layout_width="279dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="2dp"
+        android:drawableLeft="@drawable/ic_baseline_image_search_24"
+        android:onClick="chooseImages"
+        android:text="Choose Report"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/upload_rs_rp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/upload_rs_rp"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/ic_baseline_cloud_upload_24"
+        android:onClick="upload"
+        android:text="Upload Reports"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/alert_rp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/alert_rp"
+        android:layout_width="278dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="Alert"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewImages_rp"
+        android:layout_width="159dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="30dp"
+        android:drawableLeft="@drawable/ic_baseline_picture_as_pdf_24"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="Upload Report"
+        app:layout_constraintBottom_toTopOf="@+id/patientName_rp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <EditText
+        android:id="@+id/annotations_rp"
+        android:layout_width="284dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="add annoations here ..."
+        android:inputType="textMultiLine"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/choose_rs_rp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dismissBtn_rp"
+        android:layout_width="33dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textViewImages_rp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_close_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

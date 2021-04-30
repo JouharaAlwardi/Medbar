@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookAppointments">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <Button
+        android:id="@+id/bookAppointment"
+        android:layout_width="293dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="48dp"
+        android:text="Book Appointment"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="60dp"
+        android:text="00:00"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/checkButton"
+        app:layout_constraintEnd_toStartOf="@+id/chooseTime" />
+
+    <Spinner
+        android:id="@+id/spinnerYear"
+        android:layout_width="268dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerDr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/patientTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="Appointment Details:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/drTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Doctor Details:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerYear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="64dp"
+        android:text="DD/MM/YEAR"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/checkButton"
+        app:layout_constraintEnd_toStartOf="@+id/chooseDate" />
+
+    <CheckBox
+        android:id="@+id/checkButton"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:text="Medical Tests"
+        app:layout_constraintBottom_toTopOf="@+id/bookLabtest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerPatients"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/patientTxt2"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="63dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="64dp"
+        android:text="scan"
+        android:textSize="10sp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/patientTxt2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerDr"
+        android:layout_width="268dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/patientTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/patientTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Patient Details:"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerPatients"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/chooseDate"
+        android:layout_width="43dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="56dp"
+        android:text="Button"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/checkButton"
+        app:layout_constraintEnd_toStartOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/chooseTime"
+        android:layout_width="43dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="56dp"
+        android:text="Button"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/checkButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bookLabtest"
+        android:layout_width="293dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="12dp"
+        android:text="Book Labtest"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bookAppointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

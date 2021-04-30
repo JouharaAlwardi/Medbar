@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/bottom_nav_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/round_corners"
+            android:elevation="8dp"
+            app:cnb_menuResource="@menu/bottom_nav_menu"
+            app:cnb_orientationMode="horizontal"
+            app:cnb_radius="8dp"
+            app:cnb_unselectedColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/updateData"
+        android:layout_width="308dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="136dp"
+        android:background="@color/common_google_signin_btn_text_light_pressed"
+        android:onClick="updateData"
+        android:text="Update Data"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/addressProfile"
+        android:layout_width="311dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/gender_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/phoneDB"
+        android:layout_width="316dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/emailProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nameDB2"
+        android:layout_width="147dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/phoneDB"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/nameDB"
+        android:layout_width="147dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/phoneDB"
+        app:layout_constraintEnd_toStartOf="@+id/nameDB2"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/emailProfile"
+        android:layout_width="309dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/pwsProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pwsProfile"
+        android:layout_width="310dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addressProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/dobProfile"
+        android:layout_width="310dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Date of Birth"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/doctorIDProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/doctorIDProfile"
+        android:layout_width="314dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Doctor ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/updateData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/gender_spinner"
+        android:layout_width="309dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/colorControlHighlight"
+        app:layout_constraintBottom_toTopOf="@+id/dobProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/changeImage"
+        android:layout_width="27dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/ic_baseline_mode_edit_outline_24"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/nameDB2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.784" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="116dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        app:layout_constraintBottom_toTopOf="@+id/nameDB"
+        app:layout_constraintEnd_toStartOf="@+id/changeImage"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
